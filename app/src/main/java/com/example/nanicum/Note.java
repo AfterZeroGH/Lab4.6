@@ -1,19 +1,19 @@
 package com.example.nanicum;
 
-public class Note {
+public abstract class  Note {
     // Attributes
-    String title;
-    String content;
-    String createdDate;
+    public String title;
+    public String createdDate;
 
-
+    //getter
+    public String getTitle(){
+        return  title;
+    }
+    public String getCreatedDate(){
+        return createdDate;
+    }
 
     // Method
-    Void getSummary(){
-        System.out.println(title);
-        System.out.println(content);
-        System.out.println(createdDate);
-        
-        return null;
-    }
+    abstract void getSummary();
+        //System.out.println(title+":"+textContent+"("+createdDate+")")
 }
