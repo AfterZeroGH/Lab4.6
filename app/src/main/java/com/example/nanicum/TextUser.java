@@ -1,4 +1,4 @@
-package com.example.nanicum;
+package com.example.lab05;
 
 public class TextUser extends  User {
     //Attribute

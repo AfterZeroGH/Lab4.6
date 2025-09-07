@@ -1,6 +1,6 @@
-package com.example.nanicum;
+package com.example.lab05;
 
-public abstract class  Note {
+public class Note {
     // Attributes
     public String title;
     public String createdDate;
@@ -14,6 +14,8 @@ public abstract class  Note {
     }
 
     // Method
-    abstract void getSummary();
-        //System.out.println(title+":"+textContent+"("+createdDate+")")
+    int getSummary() {
+        return 0;
+    }
+    //System.out.println(title+":"+textContent+"("+createdDate+")")
 }

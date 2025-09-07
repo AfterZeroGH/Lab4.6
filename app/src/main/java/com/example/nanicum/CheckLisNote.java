@@ -1,11 +1,11 @@
-package com.example.nanicum;
+package com.example.lab05;
 
 import java.util.Collections;
 import java.util.List;
 
 public class CheckLisNote extends Note {
     //Attribute
-   private List <String> Items;
+    private List <String> Items;
 
     //getter
     public List <String> getItems(){
@@ -17,17 +17,15 @@ public class CheckLisNote extends Note {
         this.Items = Collections.singletonList(newItems);
         return newItems;
     }
-        //loop check List <String> Items;
+    //loop check List <String> Items;
 
 
     //Method
-    public void getSummary(){
+    public int getSummary(){
         String  AllItems = "" ;
+        return 0;
     }
 
-
-
-
-
-
+    public void setTitle(String strOfTitle) {
+    }
 }

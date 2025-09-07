@@ -1,9 +1,9 @@
-package com.example.nanicum;
+package com.example.lab05;
 
 public class User {
-        // Attributes
-        public String username;
-        public String password;
+    // Attributes
+    public String username;
+    public String password;
 
     //getter
     public  String getUsername (){
@@ -19,6 +19,4 @@ public class User {
         System.out.print(password);
         return null;
     }
-
-
 }

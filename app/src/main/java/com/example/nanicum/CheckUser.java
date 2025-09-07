@@ -1,8 +1,8 @@
-package com.example.nanicum;
+package com.example.lab05;
 
 import java.util.List;
 
-public class CheckUser extends  User{
+public class CheckUser {
     //Attribute
     private List<String> IdPassword ;
 
@@ -18,7 +18,7 @@ public class CheckUser extends  User{
 
     //method
     public String getSummary(){
+        String username = "";
         return  username+":("+IdPassword+")";
     }
-
 }

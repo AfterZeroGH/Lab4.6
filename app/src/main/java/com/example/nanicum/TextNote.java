@@ -1,25 +1,26 @@
-package com.example.nanicum;
+package com.example.lab05;
 
-public class TextNote extends Note {
+public class TextNote {
+    public String createdDate;
+    public String title;
     //Attribute
-    private String textContent ;
-
+     String textContent;
+     String getTitle;
     //getter method
-    public String getTextContent(){
-        return  textContent;
+    public String getTextContent() {
+        return textContent;
     }
-
     //setter method
-    public void setTextContent(String newContent){
+    public void setTextContent(String newContent) {
         this.textContent = newContent;
     }
 
     //Method
-    public void getSummary(){
+    public int getSummary() {
         //System.out.println(title+":"+textContent+"("+createdDate+")");
-
+        return 0;
     }
 
-
-
+    public void setTitle(String strOfTitle) {
+    }
 }
