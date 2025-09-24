@@ -1,15 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.kapt)
+
 }
 
 android {
-    namespace = "com.example.nanicum"
-    compileSdk = 35
+    namespace = "com.example.lab05"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.nanicum"
-        minSdk = 28
-        targetSdk = 35
+        applicationId = "com.example.lab05"
+        minSdk = 24
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -40,4 +42,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    implementation(libs.gson)
+    annotationProcessor(libs.room.compiler)
+
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
 }
